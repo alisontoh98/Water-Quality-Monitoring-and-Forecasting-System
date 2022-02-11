@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color:#579eeb;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #fcb103;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 40px auto
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  img {
+    border: 5px solid #000000;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .title {
+      height: 10px; /*childrens it's all absolute position, so must set height*/
+      position: relative;
+  }
+  
+  .aligncenter {
+      left: 0%;
+      right: 0%;
+      text-align: center;
+  }
+  .alignright {
+      
+      right: 0px;
+  }
+
+  .table {
+    border-collapse: collapse;
+    font-family: "Lato", sans-serif;
+    overflow: scroll;
+    
+  }
+
+  th, td, tr {
+    inset: "text";
+    padding: 8px;
+    width: 16.67%;
+  }
+
+  th{
+    text-align: center;
+    background-color: #fcb103;
+    color: #000000;
+    
+    
+  }
+  td{
+    text-align: left;
+    background-color: #ececec;
+    color: #000000;
+    } 
+  tr{
+    text-align: left;
+    background-color: #ececec;
+    color: #000000;
+  }
+
+  /*button approve and deny*/
+  .button1{
+    background-color:green; 
+    color:white; 
+    font-weight: 500; 
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .button2{
+    background-color:red; 
+    color:white; 
+    font-weight: 500; 
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+    
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    #column {
+      width: 100%;
+    }
+  }
